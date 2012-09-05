@@ -47,4 +47,24 @@ class SpamDetector
         $this->rules[$type][] = $rule;
         return $this;
     }
+
+    /**
+     * Sets the rules for the spam detector.
+     * 
+     * @param array $rules
+     */
+    function setRules(array $rules)
+    {
+        $this->rules = $rules;
+    }
+
+    /**
+     * Get the current list of rules for the spam detector.
+     * 
+     * @return array
+     */
+    function getRules()
+    {
+        return $this->rules;
+    }
 }
